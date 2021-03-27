@@ -1,0 +1,298 @@
+.accordionjs, .accordionjs * {
+  -webkit-box-sizing                    : border-box !important;
+  -moz-box-sizing                       : border-box !important;
+  box-sizing                            : border-box !important;
+}
+
+/*
+** The main <UL> element holding the tabs.
+*/
+.attab{ background-color: magenta;
+}
+
+
+.accordionjs {
+  font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: normal;
+  padding: 0;
+  height: 926px;
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+}
+
+  
+
+/*
+** The tabs of the accordion are made up of 3 main elements.
+** 1) <input radiobox />
+** 2) <div /> text title of the box
+** 3) <i>  FontAwesome styled checkbox to show the state.
+*/
+.accordionjs-select {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  
+  z-index: 1;
+}
+
+/* BEGIN accordionjs-title rules */
+
+  .accordionjs-title  span  {
+      display: block;
+      position:absolute;
+      width: 100%;
+      top: 413px;
+      white-space: nowrap;
+      margin-left: 0px;
+      line-height: 40px;
+      /* Slider effect */
+      transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      
+     
+  }
+  i { visibility: hidden;}
+
+  
+  
+/* END accordionjs-title rules */
+
+
+/* BEGIN accordionjs-content rules */
+.accordionjs-content {
+    background-color:blue;
+    color:white;
+    height: 926px;
+    width: auto;
+  
+}
+
+/* END accordionjs-content rules */
+
+.accordionjs > li,
+.accordionjs-title,
+.accordionjs-content,
+.accordionjs-separator {
+  float: left;
+}
+
+
+.accordionjs-select:checked ~ .accordionjs-separator {
+  
+  margin-bottom: 0px;
+}
+
+.accordionjs-title, .accordionjs-select  {
+   
+    width: 40px; 
+    height: 500px;
+    font-size: 24px;
+  align-items: center;
+}
+
+.accordionjs-title.contactbar  {color: black;}
+
+
+
+/* Do not change following properties, they aren't 
+generated automatically and are common for each slider. */
+
+.accordionjs > li, .accordionjs-title {
+    position: relative;
+}
+
+
+
+
+
+
+.accordionjs-separator {
+    transition: margin 0.3s ease 0.1s;
+    -o-transition: margin 0.3s ease 0.1s;
+    -moz-transition: margin 0.3s ease 0.1s;
+    -webkit-transition: margin 0.3s ease 0.1s;
+}
+.workbar{
+  background-color: cyan;
+  color: black;
+}
+
+
+.mySkills{
+  background-color: yellow;
+  height: 926px;
+  width: 100%;
+  position:absolute;
+}
+.skillbar{background-color: yellow;
+  color: black;}
+.list { font-family: 'VT323', monospace; 
+  color: black;
+font-size: 30px;
+margin-left:2%;
+}
+h3 {color: black;
+  margin-left: 2%;
+font-size: 40px;
+width: 425px;
+}
+
+.pink {
+  background-color: magenta;
+  height: 926px;
+  width: 100%;
+  position: relative;
+}
+.Name {position:absolute;
+top:50%;
+}
+#me{ width: 45%;
+  border-radius: 15px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+height: auto;
+float:right;
+align-items: center;
+right: 10%;
+top: 10%;
+position:absolute;
+}
+#about { font-family: 'VT323', monospace;
+  color: black;
+font-size: 30px; 
+width: 175px;
+position:absolute;
+top: 25%;}
+
+
+
+
+
+#garden{grid-area: garden;}
+#bunny{grid-area: bunny;}
+#menagerie{grid-area: menagerie;}
+#bee{grid-area:bee;}
+
+
+.grid-container {
+  background-color: cyan;
+  height: 926px;
+  width: auto;
+    display: grid;
+    grid-template-areas: 'garden bunny'
+    'menagerie bee';
+    column-gap: 5px;
+}
+
+.grid-container > div{
+    text-align: center;
+    width: 100%;
+    height: auto;
+margin:  auto;
+}
+
+.pop {border-radius: 15px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);}
+
+ h4 {font-family: 'VT323', monospace;
+      font-size: 30pt;
+    color: black;}
+
+
+
+.contactbar
+{background-color: blue;
+color: white;
+}
+.allcontent{ display: block;}
+.contact{ 
+  align-items: center;
+  top: 100%;
+  
+  }
+
+input {align-items: center;
+  Font-family: 'VT323', monospace;
+      font-size: 15pt;
+    color: black;
+  
+}
+textarea {
+  width: 100%;
+  height: 100%;
+resize: none;
+Font-family: 'VT323', monospace;
+      font-size: 15pt;
+    color: rgb(161, 161, 161);}
+
+.col {float: left;
+width: 25%;
+bottom: 50%;}
+
+button {font-family: 'VT323', monospace;
+  font-size: 15pt;
+color: black;
+background-color: cyan;
+decorat
+}
+
+@media screen and (max-width: 600px){.grid-container {display: grid;
+        grid-template-areas:
+        'garden' 
+        'bunny'
+        'menagerie'
+        'bee';}
+    img {width: 65%;
+    height: auto;}
+
+    .Mywork{ 
+        font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 15pt;
+        background-color: cyan;
+        width: 1500px;
+    transform: rotate(90deg);
+    text-align: center;
+    position: absolute;
+box-shadow:0px -5px 5px rgb(0, 0, 0);
+z-index: 2;}
+
+mySkills{
+  background-color: yellow;
+  height: 100%;
+  width: 100%;
+  position:absolute;
+}
+.skillbar{background-color: yellow;
+  color: black;}
+.list { font-family: 'VT323', monospace; 
+  color: black;
+font-size: 15px;
+}
+h3 {color: black;
+font-size: 15px;
+width: 150px;}
+
+.pink {
+  background-color: magenta;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.Name {position:absolute;
+top:25%;}
+
+#me { visibility: hidden;}
+
+#about { font-family: 'VT323', monospace;
+  color: black;
+font-size: 25px; 
+width: 175px;
+position:absolute;
+top: 15%;}
