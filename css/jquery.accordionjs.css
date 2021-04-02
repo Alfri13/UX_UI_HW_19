@@ -22,6 +22,8 @@ font-style: normal;
   list-style: none;
 }
 
+
+
   
 
 /*
@@ -201,7 +203,10 @@ margin:  auto;
 
  h4 {font-family: 'VT323', monospace;
       font-size: 30pt;
-    color: black;}
+    color: black;
+  }
+  a:link {text-decoration: none;}
+  a:hover{ text-decoration: underline;}
 
 
 
