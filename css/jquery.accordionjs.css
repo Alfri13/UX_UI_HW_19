@@ -1,4 +1,4 @@
-.accordionjs, .accordionjs * {
+x .accordionjs, .accordionjs * {
   -webkit-box-sizing                    : border-box !important;
   -moz-box-sizing                       : border-box !important;
   box-sizing                            : border-box !important;
@@ -161,7 +161,7 @@ height: auto;
 float:right;
 align-items: center;
 right: 10%;
-top: 10%;
+top: 5%;
 position:absolute;
 }
 #about { font-family: 'VT323', monospace;
@@ -169,6 +169,7 @@ position:absolute;
 font-size: 30px; 
 width: 175px;
 position:absolute;
+left: 175px;
 top: 25%;}
 
 
@@ -228,23 +229,36 @@ input {align-items: center;
   
 }
 textarea {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 250px;
 resize: none;
 Font-family: 'VT323', monospace;
       font-size: 15pt;
     color: rgb(161, 161, 161);}
+.email {  position: relative;
+  width: 50%;
+  padding: 10px;}
 
 .col {float: left;
 width: 25%;
 bottom: 50%;}
 
-button {font-family: 'VT323', monospace;
+.button {font-family: 'VT323', monospace;
   font-size: 15pt;
 color: black;
 background-color: cyan;
-decorat
 }
+
+.but { 
+  position:relative;
+  left: 530px;
+  width: 50%;
+  padding: 10px;}
+
+  .row {position: absolute;
+    left: 575px;
+  width: 270px;
+  padding: 10px;}
 
 @media screen and (max-width: 600px){.grid-container {display: grid;
         grid-template-areas:
@@ -299,5 +313,5 @@ top:25%;}
   color: black;
 font-size: 25px; 
 width: 175px;
-position:absolute;
-top: 15%;}
+position: absolute;
+top: 15%; }
